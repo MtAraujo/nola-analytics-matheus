@@ -665,8 +665,8 @@ def create_indexes(conn):
 
 def main():
     parser = argparse.ArgumentParser(description='Generate God Level Challenge data')
-    parser.add_argument('--db-url', default='postgresql://challenge:challenge@localhost:5432/challenge_db',
-                       help='PostgreSQL connection URL')
+    parser.add_argument('--db-url', default='postgresql://postgres:8528@localhost:5432/nola', 
+                        help='PostgreSQL connection URL')
     parser.add_argument('--stores', type=int, default=50, help='Number of stores')
     parser.add_argument('--products', type=int, default=500, help='Number of products')
     parser.add_argument('--items', type=int, default=200, help='Number of items/complements')
